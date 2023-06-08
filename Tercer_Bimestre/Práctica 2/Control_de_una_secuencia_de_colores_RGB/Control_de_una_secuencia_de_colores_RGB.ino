@@ -10,9 +10,6 @@
  * Proyecto: Ejercicio 2 - Práctica 2
 */
 
-//Librerias
-#include <Ticker.h>
-
 //Variables
 int red = 9;
 int blue = 10;
@@ -23,10 +20,6 @@ int t;
 
 //Funciones
 void Secuencia(void);
-void tiempo(void);
-
-//Constructores
-Ticker cambio(tiempo, 1);
 
 void setup()
 {
@@ -35,21 +28,15 @@ void setup()
   pinMode(10, OUTPUT);
   pinMode(11, OUTPUT);
   pinMode(A0, INPUT);
-  cambio.start();
 }
 
 void loop()
 {
- cambio.update();
-  Secuencia();
-  
-}
-
-void tiempo(void)
-{
   potValue = analogRead(pot);
   t = map(potValue, 0, 1023, 100, 1000);
   Serial.println(t);
+  Secuencia();
+  
 }
 
 
