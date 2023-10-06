@@ -1,3 +1,14 @@
+/*
+ * Fundacion Kinal
+ * Centro educativo tecnico laboral Kinal
+ * Electronica
+ * Grado: Quinto
+ * Sección: A
+ * Curso: Taller de electronica digital y reparación de computadoras I
+ * Nombre: Wolf Salguero - Álvaro Anzueto
+ * Carnet: 2021179 - 2019373
+ * Proyecto: Práctica No. 7
+*/
 
 //Librerias
 #include <SPI.h>
